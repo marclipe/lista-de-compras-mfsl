@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="shortcut icon" href="imagens/shopping-bag-icon.png" type="image/x-icon">
+    <title>Lista de Compras</title>
+</head>
+<body>
+    <header>
+        <h1 class="cart">MarcList</h1>
+        <p>Bem-vindo(a), pronto(a) para as compras? </p>
+    </header>
+    <main>
+        <article>
+            <h1>Categorias de Produtos: </h1>
+            <ul>
+                <li><a href="#" class="list">Alimentos</a></li>
+                <li><a href="#" class="list">Padaria e Outros</a></li>
+                <li><a href="#" class="list">Frutas, Legumes, Verduras</a></li>
+                <li><a href="#" class="list">Carnes</a></li>
+                <li><a href="#" class="list">Bebidas</a></li>
+                <li><a href="#" class="list">Frios e Lacticínios</a></li>
+                <li><a href="#" class="list">Higiene e Limpeza</a></li>
+            </ul>
+
+            <section>
+                <h3>Tipos de comidas</h3>
+                <div>
+                    <ul>
+                        <li>
+                            <input type="radio" name="radfood" id="alim" checked>
+                            <label for="alim">Alimentos</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="radfood" id="pad">
+                            <label for="pad">Padaria e Outros</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="radfood" id="fruit">
+                            <label for="fruit">Frutas, Legumes, Verduras</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="radfood" id="car">
+                            <label for="car">Carnes</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="radfood" id="beb">
+                            <label for="beb">Bebidas</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="radfood" id="frios">
+                            <label for="frios">Frios e Lacticínios</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="radfood" id="hel">
+                            <label for="hel">Higiene e Limpeza</label>
+                        </li>
+                    </ul>
+                    <p>
+                        <input type="button" value="Verificar" onclick="verificar()" id="button">
+                    </p>
+                </div>
+                <div id="resposta">
+                    Escolha o tipo de comida que você quer escolher!
+                </div>
+            </section>
+
+            <aside>
+                <h3>Ajuda? </h3>
+                <p>O intuito deste projeto é ajudar pessoas que tem dificuldades ao anotar e lembrar de tudo quando vai as compras no supermercado, sendo assim o usuário poderá anotar e memorizar com facilidade.</p>
+            </aside>           
+        </article>
+    </main>
+    <footer>
+        <p>Criado por <a href="https://github.com/MarcLipeSL20" target="_blank">Marcos Felipe S.L.</a></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
