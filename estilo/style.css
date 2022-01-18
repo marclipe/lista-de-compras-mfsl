@@ -9,7 +9,7 @@
 
 
     --font-padrão: Arial, Helvetica, sans-serif; 
-    --font-destaque: ; 
+    --font-destaque: 'Times New Roman', Times, serif; 
 }
 
 body {
@@ -24,9 +24,10 @@ body {
 
 header {
     background-color: var(--color1);
-    min-height: 120px;
+    min-height: 150px;
     text-align: center;
     padding-top: 40px;
+    line-height: 3em;
 }
 
 header > h1 {
@@ -136,6 +137,38 @@ label:hover {
     text-decoration: underline; 
     background-color: var(--color1);
     transition-duration: 0.5s;
+}
+
+section.imagem {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    font-family: var(--font-destaque);
+    font-size: 3.5vw;
+}
+
+section#img02 {
+    background-image: url('../imagens/img-people-1.jpg');
+    background-position: left top;
+}
+
+section#img01 {
+    background-image: url('../imagens/img-people-2.jpg');
+    background-position: top center;
+}
+
+section.imagem p {
+    display: inline-block;
+    padding-bottom: 2em;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 1px 1px 0px black;
 }
 
 footer {
