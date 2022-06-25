@@ -1,5 +1,18 @@
 @charset "UTF-8"; 
 
+/*=//=//=//=//= RESET =//=//=//=//=*/
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*=//=//=//=//= VARIABLES =//=//=//=//=*/
 :root {
     --color1: #012340; 
     --color2: #05AFF2; 
@@ -17,11 +30,6 @@ body {
     font-family: var(--font-padrão);
 }
 
-*{
-    margin: 0px;
-    padding: 0px;
-}
-
 header {
     background-color: var(--color1);
     min-height: 150px;
@@ -33,6 +41,45 @@ header {
 header > h1 {
     font-size: 2em;
     color: white;
+    border: 5px solid white;
+    background-color: var(--color3); 
+    border-radius: 15px;
+    text-shadow: 1px 1px 0px black;
+}
+
+/*=//=//=//=//=/ Background-images /=//=//=//=//=*/
+
+header#img02 {
+    background-image: url('../imagens/img-people-1.jpg');
+    background-position: left top;
+}
+
+header.imagem {
+    padding-top: 15vh;
+    padding-bottom: 20vh;
+    padding-left: 30px;
+    line-height: 2em;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    font-family: var(--font-destaque);
+    font-size: 3.5vw;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+header.imagem p {
+    display: inline-block;
+    padding-bottom: 2em;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 1px 1px 0px black;
+    border-radius: 10px;
 }
 
 h1.cart::after {
@@ -81,7 +128,7 @@ a.list:hover {
     transition-duration: 0.5s;
 }
 
-section {
+header {
     padding: 10px;
     background-color: var(--color2);
     margin-bottom: 20px;
@@ -139,7 +186,15 @@ label:hover {
     transition-duration: 0.5s;
 }
 
-section.imagem {
+
+/*=//=//=//=//=/ Background footer /=//=//=//=//=*/
+
+footer#img02 {
+    background-image: url('../imagens/img-people-1.jpg');
+    background-position: left top;
+}
+
+footer.imagem {
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 30px;
@@ -153,17 +208,7 @@ section.imagem {
     font-size: 3.5vw;
 }
 
-section#img02 {
-    background-image: url('../imagens/img-people-1.jpg');
-    background-position: left top;
-}
-
-section#img01 {
-    background-image: url('../imagens/img-people-2.jpg');
-    background-position: top center;
-}
-
-section.imagem p {
+footer.imagem #text-footer {
     display: inline-block;
     padding-bottom: 2em;
     padding: 5px;
@@ -171,12 +216,7 @@ section.imagem p {
     text-shadow: 1px 1px 0px black;
 }
 
-footer {
-    background-color: var(--color1);
-    text-align: center; 
-}
-
-footer > p {
+footer > #credits-footer {
     color: white;
     padding: 20px;
 }
